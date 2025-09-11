@@ -13,4 +13,6 @@ Modern registration form design for student registration system which can easily
 <br>
 Author: Mohammed Tosif
 
-Github: Tosif2230
+Github Profile: <a href="https://github.com/Tosif2230" target="_blank">Tosif2230</a>
+
+Github Repo: <a href="https://github.com/Tosif2230/Student-Regestration-System" target="_blank">Student-Regestration-System</a>

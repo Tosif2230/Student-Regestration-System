@@ -1,27 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Regestration System</title>
-
-</head>
-<body>
-    <header>
-        <h1>Student Regestration System</h1>
-        <p>This Mordern Student Registration System allows users to register new students by adding their details, view all registered students in a list, and easily manage records with options to edit or delete any student information. </p>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body class="bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 m-0 p-0">
+    <header class="bg-linear-65 from-blue-300 to-blue-600 border-b-black p-5">
+      <h1
+        class="font-mono flex justify-center items-center text-4xl text-gray-900 "
+      >
+        Student Registration System
+      </h1>
+      <p class="flex justify-center items-center text-l text-gray-900">
+        This Mordern Student Registration System allows users to register, view,
+        edit, and delete student records easily.
+      </p>
     </header>
-    <section>
-        <div>
-            <form action="">
-                <label for="Add New Student"></label>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="ID" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Contect No." required>
-            <button>Subbmit</button>
-            </form>
-        </div>
-    </section>
-</body>
+    <main class="flex justify-between mt-8">
+
+      <!-- Form Section -->
+
+      <section class="justify-center items-center border-2 rounded-lg w-[35%] p-[10px] m-auto">
+        <h2 class="flex font-mono mt-5 text-3xl text-gray-900 m-5">
+          Register Student
+        </h2>
+        <form class="grid grid-row border-solid border-black w-[90%] m-5">
+          <label
+            for="studentName"
+            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
+            >Student Name:</label
+          >
+          <input
+            type="text"
+            id="studentName"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
+            placeholder="Name"
+            required
+          />
+
+          <label
+            for="studentId"
+            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
+            >Student ID:</label
+          >
+          <input
+            type="text"
+            id="studentId"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
+            placeholder="123"
+            required
+          />
+
+          <label
+            for="email"
+            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
+            >Email ID:</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
+            placeholder="mail@domain.com"
+            required
+          />
+
+          <label
+            for="contact"
+            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
+            >Contact Number:</label
+          >
+          <input
+            type="tel"
+            id="contact"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
+            placeholder="tel"
+            required
+          />
+
+          <button
+            class="bg-blue-700 hover:bg-purple-800 text-gray-900 mt-5 p-1 font-mono rounded "
+          >
+            Add Student
+          </button>
+        </form>
+      </section>
+
+      <!-- Displey Section -->
+
+      <section class="justify-center items-center border-2 rounded-lg w-[63%] mx-2 p-[10px]">
+        <h2 class="grid font-mono mt-5 text-3xl text-gray-900 m-5">
+          Registered Students
+        </h2>
+        <table>
+          <thead>
+            <tr class="grid grid-flow-row grid-col-5 gap-2">
+              <th class="border-2">Name</th>
+              <th class="border-2">ID</th>
+              <th class="border-2">Email</th>
+              <th class="border-2">Contact</th>
+              <th class="border-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex justify-between bg-linear-65 from-blue-300 to-blue-600 border-b-black mt-5 p-5">
+        <a href="https://github.com/Tosif2230/Student-Regestration-System" target="_blank" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-3 text-center inline-flex items-center m-1"><i class="fa-brands fa-github text-xl"></i>
+Github Repository</a>
+    </footer>
+  </body>
 </html>
