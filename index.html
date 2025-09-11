@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Regestration System</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
-  <body class="bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 m-0 p-0">
+  <body
+    class="bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 m-0 p-0"
+  >
     <header class="bg-linear-65 from-blue-300 to-blue-600 border-b-black p-5">
       <h1
-        class="font-mono flex justify-center items-center text-4xl text-gray-900 "
+        class="font-mono flex justify-center items-center text-4xl text-gray-900"
       >
         Student Registration System
       </h1>
@@ -20,10 +25,11 @@
       </p>
     </header>
     <main class="flex justify-between mt-8">
-
       <!-- Form Section -->
 
-      <section class="justify-center items-center border-2 rounded-lg w-[35%] p-[10px] m-auto">
+      <section
+        class="justify-center items-center border-2 rounded-lg w-[35%] p-[10px] m-auto"
+      >
         <h2 class="flex font-mono mt-5 text-3xl text-gray-900 m-5">
           Register Student
         </h2>
@@ -81,7 +87,8 @@
           />
 
           <button
-            class="bg-blue-700 hover:bg-purple-800 text-gray-900 mt-5 p-1 font-mono rounded "
+            type="submit"
+            class="bg-blue-500 hover:bg-purple-800 text-gray-900 mt-5 p-1 font-mono rounded"
           >
             Add Student
           </button>
@@ -90,29 +97,42 @@
 
       <!-- Displey Section -->
 
-      <section class="justify-center items-center border-2 rounded-lg w-[63%] mx-2 p-[10px]">
+      <section
+        class="justify-center items-center border-2 rounded-lg w-[63%] mx-2 p-[10px]"
+      >
         <h2 class="grid font-mono mt-5 text-3xl text-gray-900 m-5">
           Registered Students
         </h2>
-        <table>
+        <table class="w-full border-collapse text-center">
           <thead>
-            <tr class="grid grid-flow-row grid-col-5 gap-2">
-              <th class="border-2">Name</th>
-              <th class="border-2">ID</th>
-              <th class="border-2">Email</th>
-              <th class="border-2">Contact</th>
-              <th class="border-2">Actions</th>
+            <tr class="bg-gray-200">
+              <th class="border-2 p-2">Name</th>
+              <th class="border-2 p-2">ID</th>
+              <th class="border-2 p-2">Email</th>
+              <th class="border-2 p-2">Contact</th>
+              <th class="border-2 p-2">Action</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <!-- Students will appear here -->
+          </tbody>
         </table>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="flex justify-between bg-linear-65 from-blue-300 to-blue-600 border-b-black mt-5 p-5">
-        <a href="https://github.com/Tosif2230/Student-Regestration-System" target="_blank" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-3 text-center inline-flex items-center m-1"><i class="fa-brands fa-github text-xl"></i>
-Github Repository</a>
+    <footer
+      class="flex justify-between bg-linear-65 from-blue-300 to-blue-600 border-b-black mt-5 p-2"
+    >
+      <a
+        href="https://github.com/Tosif2230/Student-Regestration-System"
+        target="_blank"
+        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-3 text-center inline-flex items-center m-1"
+        ><i class="fa-brands fa-github text-xl"></i> Github Repository</a
+      >
+      <div class="mt-5">
+        <h2>© 2025 Creation by Mohammed Tosif</h2>
+      </div>
     </footer>
   </body>
 </html>
