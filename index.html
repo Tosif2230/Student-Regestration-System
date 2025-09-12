@@ -11,84 +11,65 @@
     />
   </head>
   <body
-    class="bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 m-0 p-0"
+    class="flex flex-col items-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
   >
-    <header class="bg-linear-65 from-blue-300 to-blue-600 border-b-black p-5">
+    <!-- Header Section -->
+    <header class="text-center py-6">
       <h1
-        class="font-mono flex justify-center items-center text-4xl text-gray-900"
+        class="font-mono text-4xl"
       >
         Student Registration System
       </h1>
-      <p class="flex justify-center items-center text-l text-gray-900">
+      <p class="text-lg text-gray-700 mt-2">
         This Mordern Student Registration System allows users to register, view,
         edit, and delete student records easily.
       </p>
     </header>
-    <main class="flex justify-between mt-8">
       <!-- Form Section -->
 
-      <section
-        class="justify-center items-center border-2 rounded-lg w-[35%] p-[10px] m-auto"
-      >
-        <h2 class="flex font-mono mt-5 text-3xl text-gray-900 m-5">
+      <section class="border-2 shadow-2xl rounded-2xl p-6 w-11/12 md:w-2/3 lg:w-1/2">
+        <h2 class="font-mono mt-5 text-3xl text-gray-900">
           Register Student
         </h2>
-        <form class="grid grid-row border-solid border-black w-[90%] m-5">
-          <label
-            for="studentName"
-            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
-            >Student Name:</label
-          >
+        <form class="space-y-4" id="studentForm">
           <input
             type="text"
-            id="studentName"
-            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
-            placeholder="Name"
+            id="name"
+            placeholder="Student Name"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 w-full p-3"
             required
           />
 
-          <label
-            for="studentId"
-            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
-            >Student ID:</label
-          >
           <input
             type="text"
             id="studentId"
-            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
-            placeholder="123"
+            placeholder="Student ID"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 w-full p-3"
             required
           />
 
-          <label
-            for="email"
-            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
-            >Email ID:</label
-          >
           <input
             type="email"
             id="email"
-            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
             placeholder="mail@domain.com"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 w-full p-3"
             required
           />
 
-          <label
-            for="contact"
-            class="flex mt-2 p-2 text-sm font-medium text-gray-900"
-            >Contact Number:</label
-          >
+          
           <input
             type="tel"
             id="contact"
-            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2"
-            placeholder="tel"
+            placeholder="9800000000"
+            maxlength="10"
+            minlength="10"
+            class="rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 w-full p-3"
             required
           />
 
           <button
             type="submit"
-            class="bg-blue-500 hover:bg-purple-800 text-gray-900 mt-5 p-1 font-mono rounded"
+            class="font-mono w-full p-3 rounded-lg hover:opacity-80 text-gray-900 font-bold cursor-pointer "
           >
             Add Student
           </button>
@@ -97,40 +78,37 @@
 
       <!-- Displey Section -->
 
-      <section
-        class="justify-center items-center border-2 rounded-lg w-[63%] mx-2 p-[10px]"
-      >
-        <h2 class="grid font-mono mt-5 text-3xl text-gray-900 m-5">
-          Registered Students
+      <section class="w-11/12 md:w-2/3 lg:w-3/4 mt-8 overflow-x-auto">
+        <h2 class="font-mono mt-5 text-3xl text-gray-900">
+          Register Student
         </h2>
-        <table class="w-full border-collapse text-center">
+        <table class="font-mono w-full border-collapse rounded-2xl overflow-hidden">
           <thead>
-            <tr class="bg-gray-200">
-              <th class="border-2 p-2">Name</th>
-              <th class="border-2 p-2">ID</th>
-              <th class="border-2 p-2">Email</th>
-              <th class="border-2 p-2">Contact</th>
-              <th class="border-2 p-2">Action</th>
+            <tr>
+              <th class="border-2 p-3">Name</th>
+              <th class="border-2 p-3">ID</th>
+              <th class="border-2 p-3">Email</th>
+              <th class="border-2 p-3">Contact</th>
+              <th class="border-2 p-3">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- Students will appear here -->
+          <tbody class="font-mono">
+            <!-- Students details will appear here -->
           </tbody>
         </table>
       </section>
-    </main>
 
     <!-- Footer -->
     <footer
-      class="flex justify-between bg-linear-65 from-blue-300 to-blue-600 border-b-black mt-5 p-2"
+      class="text-center py-6"
     >
       <a
-        href="https://github.com/Tosif2230/Student-Regestration-System"
+        href="https://github.com/Tosif2230"
         target="_blank"
-        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-3 text-center inline-flex items-center m-1"
-        ><i class="fa-brands fa-github text-xl"></i> Github Repository</a
+        class="text-white font-mono bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-3 text-center inline-flex items-center m-1"
+        ><i class="fa-brands fa-github text-xl"></i> Github Profile</a
       >
-      <div class="mt-5">
+      <div class="mt-5 font-mono">
         <h2>© 2025 Creation by Mohammed Tosif</h2>
       </div>
     </footer>
